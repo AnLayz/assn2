@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dowry Price Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Dowry Price Calculator</h1>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <span>Education Level:</span>
+                <select class="form-control" id="education">
+                    <option value="1.5">Undergraduate</option>
+                    <option value="1.2">College</option>
+                    <option value="1.05">High School</option>
+                    <option value="0.9">Middle School</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <span>Family Net Worth:</span>
+                <select class="form-control" id="familyNetWorth">
+                    <option value="2">More than $10,000</option>
+                    <option value="1.5">Between $5,000 and $10,000</option>
+                    <option value="1.2">Less than $5,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <span>Caste:</span>
+                <select class="form-control" id="caste">
+                    <option value="100">Brahmin</option>
+                    <option value="50">Kshatriya</option>
+                    <option value="20">Vaishya</option>
+                    <option value="10">Shudra</option>
+                    <option value="-50">Varna - Untouchable</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <span>Skills:</span><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="musicalInstrument">
+                    Plays a musical instrument
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="goodCook">
+                    Good Cook
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="easygoing">
+                    Easygoing
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="singsWell">
+                    Sings Well
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span>Age:</span><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="age" value="1.5" id="age1">
+                    18-23
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="age" value="1.2" id="age2">
+                    24-27
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="age" value="0.95" id="age3">
+                    28+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <span>Reputation:</span><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gossipsParents">
+                    Gossips about Parents
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gossipsCharacter">
+                    Gossips about Character
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="generalGossip">
+                    General Gossips
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-success" id="calculateBtn">Calculate Price</button>
+            <div class="mt-3" id="result">Final Price: $100</div>
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+    
